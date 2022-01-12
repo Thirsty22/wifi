@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  background-color: #2A2A34;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 550px;
+  height: 550px;
+  border-radius: 0 100% 0 0;
+  background-color: #2A2A34;
+  transform: rotate(-45deg);
+  position: relative;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-items:nth-child(1) {
+  width: 20%;
+  height: 20%;
+  border-radius: 0 100% 0 0;
+  background-color: #D4D4D3;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+.list-items:nth-child(2) {
+  width: 30%;
+  height: 30%;
+  background-color: #2A2A34;
+  position: absolute;
+  border-radius: 100% 0 0 0;
+  transform: rotate(90deg);
+  bottom: 0px;
+  z-index: 9;
+}
+
+.list-items:nth-child(3) {
+  width: 40%;
+  height: 40%;
+  background-color: #676570;
+  position: absolute;
+  border-radius: 100% 0 0 0;
+  transform: rotate(90deg);
+  bottom: 0px;
+  z-index: 8;
+  opacity: 0;
+
+}
+
+.list-items:nth-child(4) {
+  width: 50%;
+  height: 50%;
+  background-color: #2A2A34;
+  position: absolute;
+  border-radius: 100% 0 0 0;
+  transform: rotate(90deg);
+  bottom: 0px;
+  z-index: 7;
+}
+
+.list-items:nth-child(5) {
+  width: 60%;
+  height: 60%;
+  background-color: #676570;
+  position: absolute;
+  border-radius: 100% 0 0 0;
+  transform: rotate(90deg);
+  bottom: 0px;
+  z-index: 6;
+  opacity: 0;
+
+}
+
+.list-items:nth-child(6) {
+  width: 70%;
+  height: 70%;
+  background-color: #2A2A34;
+  position: absolute;
+  border-radius: 100% 0 0 0;
+  transform: rotate(90deg);
+  bottom: 0px;
+  z-index: 5;
+}
+
+.list-items:nth-child(7) {
+  width: 80%;
+  height: 80%;
+  background-color: #676570;
+  position: absolute;
+  border-radius: 100% 0 0 0;
+  transform: rotate(90deg);
+  bottom: 0px;
+  z-index: 4;
+  opacity: 0;
+
+}
+
+.list-items:nth-child(3) {
+  animation: wifi 3s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes wifi {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.list-items:nth-child(5) {
+  opacity: 0;
+  animation: wifi 3s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes wifi {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.list-items:nth-child(7) {
+  opacity: 0;
+  animation: wifi 3s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes wifi {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
